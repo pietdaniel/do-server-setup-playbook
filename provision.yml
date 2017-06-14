@@ -1,0 +1,18 @@
+---
+- hosts: production
+  gather_facts: False
+  user: root
+  roles:
+    - initial
+
+- hosts: production
+  user: root
+  vars:
+    username: civil
+    password: $6$MAWfJF2zHJtM$G9kvAnZSiXB7CHDJXfDYIVdHDisLE0d3KgNCpAPyjV7/dL.X7KABEoeY4ECxKCCL4LvRx1xaWBuJksxggZMvC0
+    public_key: ~/.ssh/id_rsa.pub
+  roles:
+   - common
+   - ufw
+   - user
+   - ssh
