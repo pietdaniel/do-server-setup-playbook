@@ -16,10 +16,3 @@ Host do
 ```bash
 $ ansible-playbook -i hosts provision.yml
 ```
-
-
-
-
-
-
-
