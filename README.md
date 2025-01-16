@@ -11,6 +11,13 @@ Host do
   User #{USERNAME}
 ```
 
+2. Ensure hosts file has the appropriate hostname
+
+```
+[production]
+do
+```
+
 2. Run the following invocation in the directory
 
 ```bash
